@@ -9,7 +9,7 @@ contract('users', () => {
 
         const tx = await storage.createUser(username);
 
-        console.log(tx);
+        //console.log(tx);
 
         assert.isOk(tx);
     })
