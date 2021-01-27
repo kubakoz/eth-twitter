@@ -1,0 +1,104 @@
+{
+  "contractName": "UserController",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/projects/eth-twitter/contracts/users/UserController.sol\":\"UserController\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/projects/eth-twitter/contracts/users/UserController.sol\":{\"keccak256\":\"0x684897f4ae64470754ef176fa81d8655c6acc18250282f4af17e07fdfa9608b1\",\"urls\":[\"bzzr://fbb8f2dd0380dfc2e7f95fc1fbf5783e76d006845549eb0260eb2589467cc918\",\"dweb:/ipfs/QmYQ2PVHTrtFHVMMC2D7Qq3pcQRTNLviyuhfG3H7qJBBxr\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72305820bc76b68bb8b2d14805688eae298219f3b9718a5e009fc555f4a907539ffe659b64736f6c634300050a0032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72305820bc76b68bb8b2d14805688eae298219f3b9718a5e009fc555f4a907539ffe659b64736f6c634300050a0032",
+  "sourceMap": "28:30:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:30:5;;;;;;;",
+  "deployedSourceMap": "28:30:5:-;;;;;",
+  "source": "pragma solidity ^0.5.10;\r\n\r\ncontract UserController {\r\n\r\n}",
+  "sourcePath": "D:\\projects\\eth-twitter\\contracts\\users\\UserController.sol",
+  "ast": {
+    "absolutePath": "/D/projects/eth-twitter/contracts/users/UserController.sol",
+    "exportedSymbols": {
+      "UserController": [
+        147
+      ]
+    },
+    "id": 148,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 146,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 147,
+        "linearizedBaseContracts": [
+          147
+        ],
+        "name": "UserController",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 148,
+        "src": "28:30:5"
+      }
+    ],
+    "src": "0:58:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/projects/eth-twitter/contracts/users/UserController.sol",
+    "exportedSymbols": {
+      "UserController": [
+        147
+      ]
+    },
+    "id": 148,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 146,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 147,
+        "linearizedBaseContracts": [
+          147
+        ],
+        "name": "UserController",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 148,
+        "src": "28:30:5"
+      }
+    ],
+    "src": "0:58:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.10+commit.5a6ea5b1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-01-27T21:11:57.486Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
