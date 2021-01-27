@@ -1,0 +1,104 @@
+{
+  "contractName": "TweetController",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/projects/eth-twitter/contracts/tweets/TweetController.sol\":\"TweetController\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/projects/eth-twitter/contracts/tweets/TweetController.sol\":{\"keccak256\":\"0x9d9a0fe9cfa855952f49c46d8145b698ece2ae8baa3bca499b9b9537287d6e46\",\"urls\":[\"bzzr://bb361ee69f7f68a97742654b9c485d61f3b8ce87d3536966b3fcb7ec9e4a8822\",\"dweb:/ipfs/QmNf65T3RJeg4NqE7ePoArDR36B3VjaV2B1acj7y2wskbM\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72305820555e84f80b27e564c9a710aa37efb5601d2b0429499fbcc977ebc6d9ced5feb764736f6c634300050a0032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72305820555e84f80b27e564c9a710aa37efb5601d2b0429499fbcc977ebc6d9ced5feb764736f6c634300050a0032",
+  "sourceMap": "28:36:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:36:3;;;;;;;",
+  "deployedSourceMap": "28:36:3:-;;;;;",
+  "source": "pragma solidity ^0.5.10;\r\n\r\ncontract TweetController{\r\n\r\n    \r\n}",
+  "sourcePath": "D:\\projects\\eth-twitter\\contracts\\tweets\\TweetController.sol",
+  "ast": {
+    "absolutePath": "/D/projects/eth-twitter/contracts/tweets/TweetController.sol",
+    "exportedSymbols": {
+      "TweetController": [
+        100
+      ]
+    },
+    "id": 101,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 99,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 100,
+        "linearizedBaseContracts": [
+          100
+        ],
+        "name": "TweetController",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 101,
+        "src": "28:36:3"
+      }
+    ],
+    "src": "0:64:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/projects/eth-twitter/contracts/tweets/TweetController.sol",
+    "exportedSymbols": {
+      "TweetController": [
+        100
+      ]
+    },
+    "id": 101,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 99,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 100,
+        "linearizedBaseContracts": [
+          100
+        ],
+        "name": "TweetController",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 101,
+        "src": "28:36:3"
+      }
+    ],
+    "src": "0:64:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.10+commit.5a6ea5b1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-01-27T21:11:57.477Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

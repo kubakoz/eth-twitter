@@ -1,0 +1,1197 @@
+{
+  "contractName": "TweetStorage",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "tweets",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "userId",
+          "type": "uint256"
+        },
+        {
+          "name": "postedAt",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_userId",
+          "type": "uint256"
+        },
+        {
+          "name": "_text",
+          "type": "string"
+        }
+      ],
+      "name": "createTweet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.10+commit.5a6ea5b1\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_userId\",\"type\":\"uint256\"},{\"name\":\"_text\",\"type\":\"string\"}],\"name\":\"createTweet\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"tweets\",\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"text\",\"type\":\"string\"},{\"name\":\"userId\",\"type\":\"uint256\"},{\"name\":\"postedAt\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/projects/eth-twitter/contracts/tweets/TweetStorage.sol\":\"TweetStorage\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/projects/eth-twitter/contracts/tweets/TweetStorage.sol\":{\"keccak256\":\"0x0b16165c3be431748e9339a3933358c216303b6d61844c9da3e31fb1f7468e0e\",\"urls\":[\"bzzr://7f816138ee5a4f3f5fa45ee1e59dd74457c0a05117853e3f69a00f41a7470b10\",\"dweb:/ipfs/QmT9m3idWsimiqn8dXMhfNHxehE2UJiGq3rGnQvWMs56VC\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610423806100206000396000f3fe608060405234801561001057600080fd5b5060043610610053576000357c0100000000000000000000000000000000000000000000000000000000900480637cc82f2014610058578063e8d857b014610131575b600080fd5b61011b6004803603604081101561006e57600080fd5b81019080803590602001909291908035906020019064010000000081111561009557600080fd5b8201836020820111156100a757600080fd5b803590602001918460018302840111640100000000831117156100c957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101ed565b6040518082815260200191505060405180910390f35b61015d6004803603602081101561014757600080fd5b8101908080359060200190929190505050610281565b6040518085815260200180602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b838110156101af578082015181840152602081019050610194565b50505050905090810190601f1680156101dc5780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60006001600081548092919060010191905055506040518060800160405280600154815260200183815260200184815260200142815250600080600154815260200190815260200160002060008201518160000155602082015181600101908051906020019061025e929190610349565b506040820151816002015560608201518160030155905050600154905092915050565b6000602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103335780601f1061030857610100808354040283529160200191610333565b820191906000526020600020905b81548152906001019060200180831161031657829003601f168201915b5050505050908060020154908060030154905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061038a57805160ff19168380011785556103b8565b828001600101855582156103b8579182015b828111156103b757825182559160200191906001019061039c565b5b5090506103c591906103c9565b5090565b6103eb91905b808211156103e75760008160009055506001016103cf565b5090565b9056fea265627a7a7230582030010f43696b864fc1b74b41028a3ca042bc39f8f1beebcc8f57f3311179510764736f6c634300050a0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610053576000357c0100000000000000000000000000000000000000000000000000000000900480637cc82f2014610058578063e8d857b014610131575b600080fd5b61011b6004803603604081101561006e57600080fd5b81019080803590602001909291908035906020019064010000000081111561009557600080fd5b8201836020820111156100a757600080fd5b803590602001918460018302840111640100000000831117156100c957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101ed565b6040518082815260200191505060405180910390f35b61015d6004803603602081101561014757600080fd5b8101908080359060200190929190505050610281565b6040518085815260200180602001848152602001838152602001828103825285818151815260200191508051906020019080838360005b838110156101af578082015181840152602081019050610194565b50505050905090810190601f1680156101dc5780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b60006001600081548092919060010191905055506040518060800160405280600154815260200183815260200184815260200142815250600080600154815260200190815260200160002060008201518160000155602082015181600101908051906020019061025e929190610349565b506040820151816002015560608201518160030155905050600154905092915050565b6000602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103335780601f1061030857610100808354040283529160200191610333565b820191906000526020600020905b81548152906001019060200180831161031657829003601f168201915b5050505050908060020154908060030154905084565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061038a57805160ff19168380011785556103b8565b828001600101855582156103b8579182015b828111156103b757825182559160200191906001019061039c565b5b5090506103c591906103c9565b5090565b6103eb91905b808211156103e75760008160009055506001016103cf565b5090565b9056fea265627a7a7230582030010f43696b864fc1b74b41028a3ca042bc39f8f1beebcc8f57f3311179510764736f6c634300050a0032",
+  "sourceMap": "28:448:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:448:4;;;;;;;",
+  "deployedSourceMap": "28:448:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:448:4;;;;;;;;;;;;;;;;;;;;;;;;;247:224;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;247:224:4;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;247:224:4;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;247:224:4;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;247:224:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;247:224:4;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;59:37;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;59:37:4;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;59:37:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;247:224;318:4;337:13;;:15;;;;;;;;;;;;;389:41;;;;;;;;395:13;;389:41;;;;410:5;389:41;;;;417:7;389:41;;;;426:3;389:41;;;365:6;:21;372:13;;365:21;;;;;;;;;;;:65;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;450:13;;443:20;;247:224;;;;:::o;59:37::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;28:448::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.10;\r\n\r\ncontract TweetStorage {\r\n\r\n    mapping (uint => Tweet) public tweets;\r\n\r\n    struct Tweet {\r\n        uint id;\r\n        string text;\r\n        uint userId;\r\n        uint postedAt;\r\n    }\r\n\r\n    uint latestTweetId;\r\n\r\n    function createTweet(uint _userId, string memory _text) public returns(uint) {\r\n\r\n        latestTweetId++;\r\n\r\n        tweets[latestTweetId] = Tweet(latestTweetId, _text, _userId, now);\r\n\r\n        return latestTweetId;\r\n    }\r\n\r\n}",
+  "sourcePath": "D:\\projects\\eth-twitter\\contracts\\tweets\\TweetStorage.sol",
+  "ast": {
+    "absolutePath": "/D/projects/eth-twitter/contracts/tweets/TweetStorage.sol",
+    "exportedSymbols": {
+      "TweetStorage": [
+        144
+      ]
+    },
+    "id": 145,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 102,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 144,
+        "linearizedBaseContracts": [
+          144
+        ],
+        "name": "TweetStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 106,
+            "name": "tweets",
+            "nodeType": "VariableDeclaration",
+            "scope": 144,
+            "src": "59:37:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tweet_$115_storage_$",
+              "typeString": "mapping(uint256 => struct TweetStorage.Tweet)"
+            },
+            "typeName": {
+              "id": 105,
+              "keyType": {
+                "id": 103,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "68:4:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "59:23:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tweet_$115_storage_$",
+                "typeString": "mapping(uint256 => struct TweetStorage.Tweet)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 104,
+                "name": "Tweet",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 115,
+                "src": "76:5:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Tweet_$115_storage_ptr",
+                  "typeString": "struct TweetStorage.Tweet"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TweetStorage.Tweet",
+            "id": 115,
+            "members": [
+              {
+                "constant": false,
+                "id": 108,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "129:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 107,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "129:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 110,
+                "name": "text",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "147:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 109,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "147:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 112,
+                "name": "userId",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "169:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 111,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "169:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 114,
+                "name": "postedAt",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "191:13:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 113,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "191:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Tweet",
+            "nodeType": "StructDefinition",
+            "scope": 144,
+            "src": "105:107:4",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 117,
+            "name": "latestTweetId",
+            "nodeType": "VariableDeclaration",
+            "scope": 144,
+            "src": "220:18:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 116,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "220:4:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 142,
+              "nodeType": "Block",
+              "src": "324:147:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 127,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "337:15:4",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 126,
+                      "name": "latestTweetId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 117,
+                      "src": "337:13:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 128,
+                  "nodeType": "ExpressionStatement",
+                  "src": "337:15:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 138,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 129,
+                        "name": "tweets",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 106,
+                        "src": "365:6:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tweet_$115_storage_$",
+                          "typeString": "mapping(uint256 => struct TweetStorage.Tweet storage ref)"
+                        }
+                      },
+                      "id": 131,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 130,
+                        "name": "latestTweetId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 117,
+                        "src": "372:13:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "365:21:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Tweet_$115_storage",
+                        "typeString": "struct TweetStorage.Tweet storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 133,
+                          "name": "latestTweetId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 117,
+                          "src": "395:13:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 134,
+                          "name": "_text",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 121,
+                          "src": "410:5:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 135,
+                          "name": "_userId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 119,
+                          "src": "417:7:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 136,
+                          "name": "now",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 213,
+                          "src": "426:3:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 132,
+                        "name": "Tweet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 115,
+                        "src": "389:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Tweet_$115_storage_ptr_$",
+                          "typeString": "type(struct TweetStorage.Tweet storage pointer)"
+                        }
+                      },
+                      "id": 137,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "389:41:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Tweet_$115_memory",
+                        "typeString": "struct TweetStorage.Tweet memory"
+                      }
+                    },
+                    "src": "365:65:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Tweet_$115_storage",
+                      "typeString": "struct TweetStorage.Tweet storage ref"
+                    }
+                  },
+                  "id": 139,
+                  "nodeType": "ExpressionStatement",
+                  "src": "365:65:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 140,
+                    "name": "latestTweetId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 117,
+                    "src": "450:13:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 125,
+                  "id": 141,
+                  "nodeType": "Return",
+                  "src": "443:20:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 143,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createTweet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 119,
+                  "name": "_userId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "268:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 118,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 121,
+                  "name": "_text",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "282:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 120,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "282:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "267:35:4"
+            },
+            "returnParameters": {
+              "id": 125,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 124,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "318:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 123,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "317:6:4"
+            },
+            "scope": 144,
+            "src": "247:224:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 145,
+        "src": "28:448:4"
+      }
+    ],
+    "src": "0:476:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/projects/eth-twitter/contracts/tweets/TweetStorage.sol",
+    "exportedSymbols": {
+      "TweetStorage": [
+        144
+      ]
+    },
+    "id": 145,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 102,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 144,
+        "linearizedBaseContracts": [
+          144
+        ],
+        "name": "TweetStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 106,
+            "name": "tweets",
+            "nodeType": "VariableDeclaration",
+            "scope": 144,
+            "src": "59:37:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tweet_$115_storage_$",
+              "typeString": "mapping(uint256 => struct TweetStorage.Tweet)"
+            },
+            "typeName": {
+              "id": 105,
+              "keyType": {
+                "id": 103,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "68:4:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "59:23:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tweet_$115_storage_$",
+                "typeString": "mapping(uint256 => struct TweetStorage.Tweet)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 104,
+                "name": "Tweet",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 115,
+                "src": "76:5:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Tweet_$115_storage_ptr",
+                  "typeString": "struct TweetStorage.Tweet"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "TweetStorage.Tweet",
+            "id": 115,
+            "members": [
+              {
+                "constant": false,
+                "id": 108,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "129:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 107,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "129:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 110,
+                "name": "text",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "147:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 109,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "147:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 112,
+                "name": "userId",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "169:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 111,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "169:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 114,
+                "name": "postedAt",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "191:13:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 113,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "191:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Tweet",
+            "nodeType": "StructDefinition",
+            "scope": 144,
+            "src": "105:107:4",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 117,
+            "name": "latestTweetId",
+            "nodeType": "VariableDeclaration",
+            "scope": 144,
+            "src": "220:18:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 116,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "220:4:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 142,
+              "nodeType": "Block",
+              "src": "324:147:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 127,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "337:15:4",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 126,
+                      "name": "latestTweetId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 117,
+                      "src": "337:13:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 128,
+                  "nodeType": "ExpressionStatement",
+                  "src": "337:15:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 138,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 129,
+                        "name": "tweets",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 106,
+                        "src": "365:6:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Tweet_$115_storage_$",
+                          "typeString": "mapping(uint256 => struct TweetStorage.Tweet storage ref)"
+                        }
+                      },
+                      "id": 131,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 130,
+                        "name": "latestTweetId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 117,
+                        "src": "372:13:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "365:21:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Tweet_$115_storage",
+                        "typeString": "struct TweetStorage.Tweet storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 133,
+                          "name": "latestTweetId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 117,
+                          "src": "395:13:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 134,
+                          "name": "_text",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 121,
+                          "src": "410:5:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 135,
+                          "name": "_userId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 119,
+                          "src": "417:7:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 136,
+                          "name": "now",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 213,
+                          "src": "426:3:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 132,
+                        "name": "Tweet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 115,
+                        "src": "389:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Tweet_$115_storage_ptr_$",
+                          "typeString": "type(struct TweetStorage.Tweet storage pointer)"
+                        }
+                      },
+                      "id": 137,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "389:41:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Tweet_$115_memory",
+                        "typeString": "struct TweetStorage.Tweet memory"
+                      }
+                    },
+                    "src": "365:65:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Tweet_$115_storage",
+                      "typeString": "struct TweetStorage.Tweet storage ref"
+                    }
+                  },
+                  "id": 139,
+                  "nodeType": "ExpressionStatement",
+                  "src": "365:65:4"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 140,
+                    "name": "latestTweetId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 117,
+                    "src": "450:13:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 125,
+                  "id": 141,
+                  "nodeType": "Return",
+                  "src": "443:20:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 143,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createTweet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 119,
+                  "name": "_userId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "268:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 118,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 121,
+                  "name": "_text",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "282:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 120,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "282:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "267:35:4"
+            },
+            "returnParameters": {
+              "id": 125,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 124,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "318:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 123,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "317:6:4"
+            },
+            "scope": 144,
+            "src": "247:224:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 145,
+        "src": "28:448:4"
+      }
+    ],
+    "src": "0:476:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.10+commit.5a6ea5b1.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xf56D01b7cE5b9a586F349a5E9b74D23797c3B13a",
+      "transactionHash": "0xa36ca798794f89cf7892e23bdedc2f9abe0fc51bb2d8a2bd10e16d598bdfd26c"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-01-27T21:11:59.150Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
